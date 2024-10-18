@@ -1,0 +1,115 @@
+.control_Container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.top_container {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  font-size: 1vm;
+}
+
+.top_container h2 {
+  font-size: 1.7rem; /* Default font size for large screens */
+}
+
+@media (max-width: 960px) {
+  .top_container h2 {
+    font-size: 1.2rem; /* Smaller size for tablet screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .top_container h2 {
+    font-size: 0.7rem; /* Even smaller size for mobile screens */
+  }
+}
+
+@media (max-width: 0px) {
+  .top_container h2 {
+    font-size: 0.4rem; /* Even smaller size for mobile screens */
+  }
+}
+
+.mid__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+/* 
+.icon__btn {
+  padding: 0 10px;
+  color: #7b2cbf;
+} */
+
+.control__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span {
+  color: #9556cc;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.second__control {
+  display: flex;
+  align-items: center;
+}
+
+/*  */
+.bottom__container {
+  width: calc(100% - 40px); /* Full width minus 20px margin on both sides */
+  margin: 0 20px;
+  position: relative; /* Allow positioning of inner elements */
+}
+
+.slider__container {
+  width: 100%; /* Ensure it takes full width */
+  display: flex;
+  gap: 10px; /* Space between the slider and span */
+  align-items: center; /* Center align items */
+  margin-bottom: 35px; /* Adjust margin for space */
+}
+
+.control__box {
+  display: flex;
+  /* justify-content: flex-start; Align icons to the left */
+  align-items: center;
+  justify-content: start;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 10px;
+}
+
+.inner__controls {
+  display: flex;
+  align-items: center; /* Align icons and volume slider vertically */
+}
+
+.volume__control {
+  width: 100px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.volume__control span {
+  margin-left: 10px; /* Add some space between the slider and text */
+}
