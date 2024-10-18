@@ -39,7 +39,7 @@ const Control = ({
   };
 
   const changeQuality = (newQuality) => {
-    console.log("new quality" + newQuality);
+    // console.log("new quality" + newQuality);
     const currentPlayedTime = videoPlayerRef.current.getCurrentTime(); // Save current time
 
     // Dispatch the quality change along with the played time
