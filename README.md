@@ -1,26 +1,77 @@
-# Lumen PHP Framework
+# 🎬 React Video Player
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/lumen)](https://packagist.org/packages/laravel/lumen-framework)
+A React video player that features a friendly UI/UX, providing users with an intuitive interface for seamless video playback.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+## 📑 Table of Contents
 
-> **Note:** In the years since releasing Lumen, PHP has made a variety of wonderful performance improvements. For this reason, along with the availability of [Laravel Octane](https://laravel.com/docs/octane), we no longer recommend that you begin new projects with Lumen. Instead, we recommend always beginning new projects with [Laravel](https://laravel.com).
+## ✨ Features
 
-## Official Documentation
+- 📺 Change video quality without interrupting playback
+  ![Change Quality GIF](./assests/Change_Quality_demo.gif)
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+- ⏯️ Pause and play the video
 
-## Contributing
+- 🔇 Mute and unmute the audio
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- 🔊 Increase and decrease the volume, with a percentage display
 
-## Security Vulnerabilities
+- 📊 Progress bar to show the played time
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+- ⏩ Fast forward and ⏪ rewind functionality
 
-## License
+- 📺 Change video quality Based on Network Speed
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## 🛠️ Technologies Used
+
+- **⚛️ React**: A JavaScript library for building user interfaces, enabling the creation of interactive and dynamic web applications.
+- **🎥 React Player**: A customizable media player that simplifies video playback with great documentation, allowing for extensive customization options.
+- **🎨 CSS**: Used for styling the application, enhancing the visual presentation of the user interface.
+- **🖌️ Material UI**: A popular React UI framework that provides pre-built components to save development time and focus on application logic.
+
+## 📦 Installation
+
+Follow these steps to set up and run the project locally:
+
+1. **Clone the repository**:
+   - Open your terminal and clone the project to your local machine:
+     ```bash
+     git clone https://github.com/Youssefawzy/react-video-player
+     ```
+
+2. **Navigate to the project directory**:
+   - Once cloned, move into the project folder:
+     ```bash
+     cd react-video-player
+     ```
+
+3. **Install Lumen dependencies**:
+   - Ensure that PHP and Composer are installed. Install the backend (Lumen) dependencies:
+     ```bash
+     composer install
+     ```
+
+4. **Install React dependencies**:
+   - Ensure that Node.js and npm are installed. Install the frontend (React) dependencies:
+     ```bash
+     npm install
+     ```
+
+5. **Run the application (React and Lumen together)**:
+   - To start both the Lumen backend and the React frontend simultaneously, use:
+     ```bash
+     npm run dev:both
+     ```
+   - This will start the React frontend on `http://localhost:3000` and the Lumen backend on `http://localhost:8000`.
+
+
+6. **Run Lumen standalone**:
+   - To only run the Lumen backend:
+     ```bash
+     npm run lumen
+     ```
+
+Now you’re all set up to run the project locally!
+
+
